@@ -1,0 +1,53 @@
+@import 'normalize.scss';
+
+// === mixins ===
+@mixin font-main {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin font-secondary {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// === / mixing ===
+
+// === variables ===
+$color-white: #ffffff;
+$color-blue-white: #ebfbff;
+$color-blue-light: #3d97b3;
+$color-blue: #4750b6;
+$color-gray-light: #6c6c6c;
+$color-gray: #414141;
+$color-black: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-md-max: 767px;
+$screen-lg-max: 991px;
+$screen-xl-max: 1199px;
+
+// === / variables ===
+
+// === common ===
+* {
+  box-sizing: border-box;
+}
+body {
+  @include font-main;
+}
+
+.outside {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inside {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+// === / common ===
