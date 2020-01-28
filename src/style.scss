@@ -202,6 +202,55 @@ body {
 // === / profile ===
 
 // === experience ===
+.experience {
+  color: $color-white;
+
+  .inside {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: $color-black;
+      font-size: 30px;
+      font-weight: 100;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &-checkboxs {
+      display: flex;
+    flex-direction: column;
+  }
+  &-checkbox {
+    display: flex;
+    margin-bottom: 16px;
+    input {
+      margin-right: 12px;
+    }
+      p{
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 300;
+
+      }
+    }
+
+  }
+
+}
 
 // === / experience ===
 

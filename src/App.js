@@ -2,7 +2,7 @@ import React from "react"
 import "./style.scss"
 import Slider from "./Slider"
 
-// import experienceImg from './assets/experienceImg.png'
+import experienceImg from './assets/experienceImg.png'
 // import  jsImg from './assets/jsImg.png'
 // import  personImg from './assets/personImg.png'
 import profileImg from "./assets/profileImg.png"
@@ -72,26 +72,53 @@ function App() {
       <div className="outside experience">
         <div className="inside">
           <div className="experience__title">
-            <img src="" alt="" />
+            <img src={experienceImg} alt="" />
             <h3>Расскажите о своем опыте</h3>
           </div>
           <div className="experience__action">
-            <div className="experience__action-checkboxs--one">
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
+            <div className="experience__action-checkboxs">
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>БЭМ/OOCSS</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Stylus/LESS/SASS</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Работаю с SVG</p>
+              </div>
             </div>
 
-            <div className="experience__action-checkboxs--two">
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
+            <div className="experience__action-checkboxs">
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Верстаю семантично</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>ES2015/ES2016</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Gulp/GRUNT</p>
+              </div>
             </div>
 
-            <div className="experience__action-checkboxs--three">
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
-              <input type="checkbox"></input>
+            <div className="experience__action-checkboxs">
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Webpack</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>Ипользую Git</p>
+              </div>
+              <div className="experience__action-checkbox">
+                <input type="checkbox" />
+                <p>jQuery</p>
+              </div>
             </div>
           </div>
         </div>
