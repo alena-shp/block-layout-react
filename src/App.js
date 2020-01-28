@@ -2,6 +2,11 @@ import React from "react"
 import "./style.scss"
 import Slider from "./Slider"
 
+// import experienceImg from './assets/experienceImg.png'
+// import  jsImg from './assets/jsImg.png'
+// import  personImg from './assets/personImg.png'
+import profileImg from "./assets/profileImg.png"
+
 function App() {
   return (
     <>
@@ -27,20 +32,24 @@ function App() {
       <div className="outside profile">
         <div className="inside">
           <div className="profile__title">
-            <img src="" alt="" />
+            <img src={profileImg} alt="" />
             <h3>Личная информация</h3>
           </div>
-          <div classname="profile__form">
+          <div className="profile__form">
             <input
               className="profile__form-name"
               type="text"
               placeholder="ФИО"
             />
-            <input
-              className="profile__form-year"
-              type="text"
-              placeholder="Год рождения"
-            />
+            <select className="profile__form-year">
+              <option>Год рождения</option>
+              <option>1990</option>
+              <option>1991</option>
+              <option>1992</option>
+              <option>1993</option>
+              <option>1995</option>
+              <option>1996</option>
+            </select>
             <input
               className="profile__form-place"
               type="text"
