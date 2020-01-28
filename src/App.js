@@ -73,48 +73,51 @@ function App() {
           </div>
           <div className="experience__action">
             <div className="experience__action-checkboxs">
-              <div className="experience__action-checkbox">
+              <label className="experience__action-checkbox">
+                <input
+                  type="checkbox"
+                />
+
+                <span>БЭМ/OOCSS</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>БЭМ/OOCSS</p>
-              </div>
-              <div className="experience__action-checkbox">
+                <span>Stylus/LESS/SASS</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>Stylus/LESS/SASS</p>
-              </div>
-              <div className="experience__action-checkbox">
-                <input type="checkbox" />
-                <p>Работаю с SVG</p>
-              </div>
+                <span>Работаю с SVG</span>
+              </label>
             </div>
 
             <div className="experience__action-checkboxs">
-              <div className="experience__action-checkbox">
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>Верстаю семантично</p>
-              </div>
-              <div className="experience__action-checkbox">
+                <span>Верстаю семантично</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>ES2015/ES2016</p>
-              </div>
-              <div className="experience__action-checkbox">
+                <span>ES2015/ES2016</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>Gulp/GRUNT</p>
-              </div>
+                <span>Gulp/GRUNT</span>
+              </label>
             </div>
 
             <div className="experience__action-checkboxs">
-              <div className="experience__action-checkbox">
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>Webpack</p>
-              </div>
-              <div className="experience__action-checkbox">
+                <span>Webpack</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>Ипользую Git</p>
-              </div>
-              <div className="experience__action-checkbox">
+                <span>Ипользую Git</span>
+              </label>
+              <label className="experience__action-checkbox">
                 <input type="checkbox" />
-                <p>jQuery</p>
-              </div>
+                <span>jQuery</span>
+              </label>
             </div>
           </div>
         </div>
@@ -123,7 +126,7 @@ function App() {
         <div className="inside">
           <div className="skill__title">
             <img src="" alt="" />
-            <h3>Расскажите о своем опыте</h3>
+            <h3>Уровень владения JavaScript</h3>
           </div>
           <Slider />
         </div>
@@ -133,8 +136,7 @@ function App() {
           <div className="pers-information__title">
             <img src="" alt="" />
             <h3>Расскажите о себе</h3>
-            <h3>Расскажите о себе</h3>
-            <p>Напишите несколько предложений</p>
+            <p>Напишите несколько предложений, чем привлекла наша вакансия и ч</p>
           </div>
           <button className="pers-information__action">
             <textarea

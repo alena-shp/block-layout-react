@@ -29,6 +29,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      color: $color-blue !important;
     }
     &__value-container {
       justify-content: center;
@@ -41,6 +42,8 @@
     }
     &__menu {
       margin: 0 !important;
+      padding: 40px 0;
+      color: $color-blue;
     }
   }
 }
