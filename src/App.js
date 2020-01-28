@@ -4,28 +4,24 @@ import Slider from "./Slider"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <div className="outside header">
-        <div className="inside">
-          <div className="header__menu menu">
-            <ul className="menu__links">
-              <li className="menu__links-link active">
-                <a href="0#">Личная информация</a>
-              </li>
-              <li className="menu__links-link">
-                <a href="0#">Опыт</a>
-              </li>
-              <li className="menu__links-link">
-                <a href="0#">JavaScript</a>
-              </li>
-              <li className="menu__links-link">
-                <a href="0#">О себе</a>
-              </li>
-            </ul>
-          </div>
-          <div className="header__title">
-            <h1>Анкета</h1>
-          </div>
+        <div className="header__menu">
+          <a className="header__menu-link active" href="0#">
+            Личная информация
+          </a>
+          <a className="header__menu-link" href="0#">
+            Опыт
+          </a>
+          <a className="header__menu-link" href="0#">
+            JavaScript
+          </a>
+          <a className="header__menu-link" href="0#">
+            О себе
+          </a>
+        </div>
+        <div className="header__title">
+          <h1>Анкета</h1>
         </div>
       </div>
       <div className="outside profile">
@@ -119,7 +115,7 @@ function App() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
