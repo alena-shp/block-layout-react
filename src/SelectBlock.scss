@@ -1,0 +1,46 @@
+@import "style.scss";
+
+.select-block {
+  border: 0;
+  background-color: $color-white;
+  font-size: 24px;
+  width: 320px;
+  // padding-bottom: 26px;
+  margin-bottom: 26px !important;
+  padding: 0 !important;
+
+  &-option {
+    &__control {
+      // padding-top: 20px;
+      // padding-bottom: 20px;
+      border: 1px solid $color-gray;
+      border-radius: 4px;
+      height: 60px;
+      outline: none;
+      &--is-focused {
+        border: 1px solid $color-gray !important;
+        box-shadow: none !important;
+      }
+    }
+    &__indicator {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &__value-container {
+      justify-content: center;
+    }
+    &__indicator-separator {
+      display: none;
+    }
+    &__placeholder {
+      color: $color-gray !important;
+    }
+    &__menu {
+      margin: 0 !important;
+    }
+  }
+}

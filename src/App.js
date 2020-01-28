@@ -2,10 +2,11 @@ import React from "react"
 import "./style.scss"
 import Slider from "./Slider"
 
-import experienceImg from './assets/experienceImg.png'
+import experienceImg from "./assets/experienceImg.png"
 // import  jsImg from './assets/jsImg.png'
 // import  personImg from './assets/personImg.png'
 import profileImg from "./assets/profileImg.png"
+import SelectBlock from "./SelectBlock"
 
 function App() {
   return (
@@ -41,15 +42,10 @@ function App() {
               type="text"
               placeholder="ФИО"
             />
-            <select className="profile__form-year">
-              <option>Год рождения</option>
-              <option>1990</option>
-              <option>1991</option>
-              <option>1992</option>
-              <option>1993</option>
-              <option>1995</option>
-              <option>1996</option>
-            </select>
+            <SelectBlock
+              className="profile__form-year"
+              placeholder="Год рождения"
+            />
             <input
               className="profile__form-place"
               type="text"

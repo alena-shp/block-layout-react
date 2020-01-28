@@ -115,7 +115,6 @@ body {
 
 // === profile ===
 .profile {
-  color: $color-white;
   padding-bottom: 70px;
   padding-top: 70px;
 
@@ -156,7 +155,9 @@ body {
       padding-bottom: 20px;
       border: 1px solid $color-gray;
       border-radius: 4px;
+      font-size: 24px;
       outline: none;
+      text-align: center;
       width: 100%;
 
       &:not(:last-child) {
@@ -168,32 +169,6 @@ body {
         text-align: center;
         font-size: 24px;
         font-weight: 400;
-      }
-    }
-
-    &-year {
-      width: 60%;
-      border: 1px solid $color-gray;
-      background-color: $color-white;
-      color: $color-gray;
-      font-size: 24px;
-      padding-left: 80px;
-      font-weight: 400;
-      -webkit-appearance: none;
-      background-image: url("./assets/arrowImg.png");
-      background-position: 95% center;
-      background-repeat: no-repeat;
-      /* for FF */
-      -moz-appearance: none;
-      text-indent: 0.01px;
-      text-overflow: "";
-      /* for IE */
-      -ms-appearance: none;
-      appearance: none !important;
-
-
-      &::-ms-expand {
-        display: none;
       }
     }
   }
@@ -232,24 +207,21 @@ body {
     width: 100%;
     &-checkboxs {
       display: flex;
-    flex-direction: column;
-  }
-  &-checkbox {
-    display: flex;
-    margin-bottom: 16px;
-    input {
-      margin-right: 12px;
+      flex-direction: column;
     }
-      p{
+    &-checkbox {
+      display: flex;
+      margin-bottom: 16px;
+      input {
+        margin-right: 12px;
+      }
+      p {
         color: $color-black;
         font-size: 16px;
         font-weight: 300;
-
       }
     }
-
   }
-
 }
 
 // === / experience ===
