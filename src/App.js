@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./style.scss"
 import SelectBlock from "./SelectBlock"
 import SliderBlock from "./SliderBlock"
@@ -9,26 +9,44 @@ import personImg from "./assets/personImg.png"
 import profileImg from "./assets/profileImg.png"
 
 import mark1Img from "./assets/markImg.png"
+
 import menuImg from "./assets/menuImg.svg"
+import classNames from "classnames"
 
 function App() {
+  const [isOpenBurgerMenu, setIsOpenBurgerMenu] = useState(false)
+
+  const toggleOpenBurgerMenu = () => {
+    setIsOpenBurgerMenu(!isOpenBurgerMenu)
+    console.log(isOpenBurgerMenu)
+  }
+
+  const headerMenuClass = classNames({
+    header__menu: true,
+    "header__menu--open": isOpenBurgerMenu
+  })
+
   return (
     <>
       <div className="outside header">
-        <div className="header__menu">
-          <a className="header__menu-link active" href="0#">
-            Личная информация
-          </a>
-          <a className="header__menu-link" href="0#">
-            Опыт
-          </a>
-          <a className="header__menu-link" href="0#">
-            JavaScript
-          </a>
-          <a className="header__menu-link" href="0#">
-            О себе
-          </a>
-          <a href="0#"><img src={menuImg} alt=""/></a>
+        <div className="header__wrapper">
+          <span onClick={toggleOpenBurgerMenu} className="mobile-only">
+            <img src={menuImg} alt="" />
+          </span>
+          <div className={headerMenuClass}>
+            <a className="header__menu-link active" href="0#">
+              Личная информация
+            </a>
+            <a className="header__menu-link" href="0#">
+              Опыт
+            </a>
+            <a className="header__menu-link" href="0#">
+              JavaScript
+            </a>
+            <a className="header__menu-link" href="0#">
+              О себе
+            </a>
+          </div>
         </div>
         <div className="header__title">
           <h1>Анкета</h1>
@@ -124,7 +142,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="outside skill">
+      <div className="outside skill desktop-only">
         <div className="inside">
           <div className="skill__title">
             <img src={jsImg} alt="" />
