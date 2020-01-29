@@ -8,22 +8,24 @@
   // padding-bottom: 26px;
   margin-bottom: 26px !important;
   padding: 0 !important;
+  width: 60% !important;
+  border: none !important;
 
   &-option {
     &__control {
       // padding-top: 20px;
       // padding-bottom: 20px;
-      border: 1px solid $color-gray;
+      border: 1px solid $color-gray-light !important;
       border-radius: 4px;
       height: 60px;
       outline: none;
       &--is-focused {
-        border: 1px solid $color-gray !important;
         box-shadow: none !important;
+        border: 1px solid $color-gray-light;
       }
     }
     &__indicator {
-      align-items: center;
+      align-items: center !important;
       display: flex;
       height: 100%;
       position: absolute;
@@ -32,6 +34,7 @@
       color: $color-blue !important;
     }
     &__value-container {
+      display: flex;
       justify-content: center;
     }
     &__indicator-separator {
@@ -44,6 +47,9 @@
       margin: 0 !important;
       padding: 40px 0;
       color: $color-blue;
+      &-list {
+        text-align: center !important;
+      }
     }
   }
 }

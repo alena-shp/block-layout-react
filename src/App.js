@@ -1,12 +1,15 @@
 import React from "react"
 import "./style.scss"
-import Slider from "./Slider"
+import SelectBlock from "./SelectBlock"
+import SliderBlock from "./SliderBlock"
 
 import experienceImg from "./assets/experienceImg.png"
-// import  jsImg from './assets/jsImg.png'
-// import  personImg from './assets/personImg.png'
+import jsImg from "./assets/jsImg.png"
+import personImg from "./assets/personImg.png"
 import profileImg from "./assets/profileImg.png"
-import SelectBlock from "./SelectBlock"
+
+import mark1Img from "./assets/markImg.png"
+import menuImg from "./assets/menuImg.svg"
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
           <a className="header__menu-link" href="0#">
             О себе
           </a>
+          <a href="0#"><img src={menuImg} alt=""/></a>
         </div>
         <div className="header__title">
           <h1>Анкета</h1>
@@ -74,9 +78,7 @@ function App() {
           <div className="experience__action">
             <div className="experience__action-checkboxs">
               <label className="experience__action-checkbox">
-                <input
-                  type="checkbox"
-                />
+                <input type="checkbox" />
 
                 <span>БЭМ/OOCSS</span>
               </label>
@@ -125,20 +127,39 @@ function App() {
       <div className="outside skill">
         <div className="inside">
           <div className="skill__title">
-            <img src="" alt="" />
+            <img src={jsImg} alt="" />
             <h3>Уровень владения JavaScript</h3>
           </div>
-          <Slider />
+          <div className="skill__mark">
+            <div className="skill__mark-text">
+              <p>Не владею</p>
+              <p>
+                Использую готовые
+                <br />
+                решения
+              </p>
+              <p>
+                Использую готовые решения
+                <br /> и умею и переделывать
+              </p>
+              <p>Пишу сложный JS с нуля</p>
+            </div>
+            <img className="skill__mark-img" src={mark1Img} alt="" />
+          </div>
+          <SliderBlock />
         </div>
       </div>
       <div className="outside pers-information">
         <div className="inside">
           <div className="pers-information__title">
-            <img src="" alt="" />
+            <img src={personImg} alt="" />
             <h3>Расскажите о себе</h3>
-            <p>Напишите несколько предложений, чем привлекла наша вакансия и ч</p>
+            <p>
+              Напишите несколько предложений, чем привлекла наша вакансия и что
+              вы ожидаете от работы у нас
+            </p>
           </div>
-          <button className="pers-information__action">
+          <div className="pers-information__action">
             <textarea
               className="pers-information__action-textarea"
               placeholder="Понравилось тем, что..."
@@ -146,7 +167,7 @@ function App() {
             <button type="submit" className="pers-information__action-button">
               Готово
             </button>
-          </button>
+          </div>
         </div>
       </div>
     </>

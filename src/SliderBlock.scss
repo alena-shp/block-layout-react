@@ -1,0 +1,37 @@
+@import "./style.scss";
+
+.rc-slider {
+  height: 14px;
+  padding: 0;
+  &-rail {
+    position: absolute;
+
+    &::before {
+      content: url("./assets/graylineImg.png");
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 5;
+    }
+  }
+  &-track {
+    background: url("./assets/gradientImg.png") !important;
+      
+  }
+
+  &-handle {
+    position: absolute;
+
+    &::before {
+      content: url("./assets/handleImg.png");
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 5;
+    }
+  }
+}
